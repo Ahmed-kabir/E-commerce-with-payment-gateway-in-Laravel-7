@@ -14,7 +14,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        return view('main_content');
     }
 
     /**
@@ -22,9 +22,9 @@ class WelcomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function cart()
     {
-        //
+        return view('cart');
     }
 
     /**
@@ -33,9 +33,11 @@ class WelcomeController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function checkout($ammount)
     {
-        //
+        $data['total_ammount'] = $ammount;
+        // dd($data['total_ammount']);
+        return view('checkout', $data);
     }
 
     /**
@@ -44,9 +46,9 @@ class WelcomeController extends Controller
      * @param  \App\Welcome  $welcome
      * @return \Illuminate\Http\Response
      */
-    public function show(Welcome $welcome)
+    public function success()
     {
-        //
+        return view('success');
     }
 
     /**

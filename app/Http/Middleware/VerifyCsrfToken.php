@@ -13,5 +13,6 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
+        'http://www.kabir.com/ecommerce/success'
     ];
 }

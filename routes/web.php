@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', 'WelcomeController@index');
+Route::get('/cart', 'WelcomeController@cart');
+Route::get('/checkout/{ammount}', 'WelcomeController@checkout');
+Route::post('/success', 'WelcomeController@success');
