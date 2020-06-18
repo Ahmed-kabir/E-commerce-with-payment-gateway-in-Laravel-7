@@ -22,9 +22,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 <!-- //pignose css -->
+<link rel="stylesheet" href="{{asset('/frontend/css/flexslider.css')}}" type="text/css" media="screen" />
 <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
 <script src="{{asset('frontend/js/jquery-2.1.4.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('frontend/js/imagezoom.js')}}"></script>
+<script src="{{asset('frontend/js/jquery.flexslider.js')}}"></script>
 <!-- //js -->
 <!-- cart -->
     <script src="{{asset('frontend/js/simpleCart.min.js')}}"></script>
@@ -118,7 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     </div>
                                     <div class="col-sm-3 multi-gd-img">
                                         <ul class="multi-column-dropdown">
-                                            <li><a href="mens.html">Clothing</a></li>
+                                            <li><a href="{{url('/category')}}">Clothing</a></li>
                                             <li><a href="mens.html">Wallets</a></li>
                                             <li><a href="mens.html">Footwear</a></li>
                                             <li><a href="mens.html">Watches</a></li>

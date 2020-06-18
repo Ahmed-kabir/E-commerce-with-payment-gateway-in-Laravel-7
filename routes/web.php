@@ -20,3 +20,5 @@ Route::get('/', 'WelcomeController@index');
 Route::get('/cart', 'WelcomeController@cart');
 Route::get('/checkout/{ammount}', 'WelcomeController@checkout');
 Route::post('/success', 'WelcomeController@success');
+Route::get('/category', 'WelcomeController@category');
+Route::get('/details', 'WelcomeController@details');

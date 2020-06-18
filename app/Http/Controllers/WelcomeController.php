@@ -57,9 +57,9 @@ class WelcomeController extends Controller
      * @param  \App\Welcome  $welcome
      * @return \Illuminate\Http\Response
      */
-    public function edit(Welcome $welcome)
+    public function category()
     {
-        //
+        return view('category');
     }
 
     /**
@@ -69,9 +69,9 @@ class WelcomeController extends Controller
      * @param  \App\Welcome  $welcome
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Welcome $welcome)
+    public function details()
     {
-        //
+        return view('details');
     }
 
     /**
